@@ -57,6 +57,7 @@ pub enum Action {
     /// Dumps the screen to a file
     DumpScreen(String),
     /// Scroll up in focus pane.
+    EditScrollback,
     ScrollUp,
     /// Scroll up at point
     ScrollUpAt(Position),
@@ -103,7 +104,7 @@ pub enum Action {
     GoToTab(u32),
     ToggleTab,
     TabNameInput(Vec<u8>),
-    /// Run speficied command in new pane.
+    /// Run specified command in new pane.
     Run(RunCommandAction),
     /// Detach session and exit
     Detach,

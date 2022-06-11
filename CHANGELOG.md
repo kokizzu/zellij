@@ -5,6 +5,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 
 ## [Unreleased]
+* feat: Log errors causing "empty message received from client" (https://github.com/zellij-org/zellij/pull/1459)
+* chore(dependencies): update `crossbeam` `0.8.0` -> `0.8.1` (https://github.com/zellij-org/zellij/pull/1463)
+* add(option): `default-layout` setting for changing the default layout upon start, example: `default_layout: compact` (https://github.com/zellij-org/zellij/pull/1467)
+* fix: many typos (https://github.com/zellij-org/zellij/pull/1481)
+* add: checksum for release binary (https://github.com/zellij-org/zellij/pull/1482)
+* fix: update cli tooltips (https://github.com/zellij-org/zellij/pull/1488)
+
+## [0.30.0] - 2022-06-07
 * fix: right and middle clicks creating selection (https://github.com/zellij-org/zellij/pull/1372)
 * feat: Attach to sessions more conveniently by only typing their name's first character(s) (https://github.com/zellij-org/zellij/pull/1360)
 * fix: a small typo (https://github.com/zellij-org/zellij/pull/1390)
@@ -23,6 +31,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 * add: a version of the `tab-bar` plugin, that carries mode information, called `compact-bar`
 also adds a new default layout called `compact`, which can be loaded with: `zellij --layout compact`,
 that loads the `compact-bar`. (https://github.com/zellij-org/zellij/pull/1450)
+* feat: allow searching through and editing the pane scrollback with your default editor (https://github.com/zellij-org/zellij/pull/1456)
+* fix: exit client loop on empty message from server (https://github.com/zellij-org/zellij/pull/1454)
+* fix: mouse selection sometimes getting stuck (https://github.com/zellij-org/zellij/pull/1418)
+* feat: tweak simplified UI (https://github.com/zellij-org/zellij/pull/1458)
+* feat: add status more tips (https://github.com/zellij-org/zellij/pull/1462)
 
 ## [0.29.1] - 2022-05-02
 * fix: forward mouse events to plugin panes (https://github.com/zellij-org/zellij/pull/1369)
@@ -164,7 +177,7 @@ that loads the `compact-bar`. (https://github.com/zellij-org/zellij/pull/1450)
 * Fix: handle pasted text properly in windows terminal (https://github.com/zellij-org/zellij/pull/917)
 * Fix: update example config options (https://github.com/zellij-org/zellij/pull/920)
 * Fix: correct handling of unbinds (https://github.com/zellij-org/zellij/issues/923)
-* Fix: improve perfomance when resizing window with a large scrollback buffer (https://github.com/zellij-org/zellij/pull/895)
+* Fix: improve performance when resizing window with a large scrollback buffer (https://github.com/zellij-org/zellij/pull/895)
 * Fix: support multiple users in plugins (https://github.com/zellij-org/zellij/pull/930)
 * Fix: update default layouts (https://github.com/zellij-org/zellij/pull/926)
 * Add: infrastructure to show distinct tips in the `status-bar` plugin (https://github.com/zellij-org/zellij/pull/926)
@@ -173,7 +186,7 @@ that loads the `compact-bar`. (https://github.com/zellij-org/zellij/pull/1450)
 ## [0.21.0] - 2021-11-29
 * Add: initial preparations for overlay's (https://github.com/zellij-org/zellij/pull/871)
 * Add: initial `zellij.desktop` file (https://github.com/zellij-org/zellij/pull/870)
-* Add: section for third party repositiories `THIRD_PARTY_INSTALL.md` (https://github.com/zellij-org/zellij/pull/857)
+* Add: section for third party repositories `THIRD_PARTY_INSTALL.md` (https://github.com/zellij-org/zellij/pull/857)
 * Add: suggestion for similar session name, on attach (https://github.com/zellij-org/zellij/pull/843)
 * Fix: handling and overwriting options through the cli (https://github.com/zellij-org/zellij/pull/859)
 
